@@ -1,0 +1,20 @@
+html{padding:0;background-color:black;color:rgba(232, 230, 227, 0.9)}
+html,body,form,input,textarea,button{font-family:"SF Pro",Helvetica,Verdana,sans-serif;font-size:medium}
+body{margin:0;padding:0}
+/** Don't set canvas height, because setting it stops 
+ *  the browser from maintaining width/height ratio.
+**/
+canvas#paper{}
+footer{padding:1em 2em}
+a:link,a:visited{color:rgba(232, 230, 227, 0.9)!important}
+a:focus,li a:hover,li:active{color:#ffb900!important}
+form#dialog{position:absolute;display:block;border:3pt inset #037389;padding:8pt;margin:0;width:1044px;background-color:rgba(250,250,250,0.9)}
+#dialogTitle,#dialogText{border:0pt white;color:black}
+#dialogText{background-color:transparent;width:100%}
+#dialogTitle{font-size:larger;font-weight:bold}
+form#dialog input[type=submit]{display:inline-block;visibility:hidden;margin:4pt 4pt 4pt 0;padding:8pt 12pt;background-color:rgba(0,0,0,0.9);color:rgba(255,192,169,1);border:0pt white;font-weight:bold;cursor:pointer}
+form#dialog input[type=submit]:last-child{margin-right:0}
+.redlight,form#dialog input[type=submit].redlight{background-color:rgba(96,0,0,0.9)}
+.greenlight,form#dialog input[type=submit].greenlight{background-color:rgba(0,96,0,0.9)}
+.wideToolbar{display:flex;justify-content:space-between}
+.wideToolbar input{flex-direction:row;flex-wrap:wrap}

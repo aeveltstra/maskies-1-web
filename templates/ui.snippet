@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block ui %}
+<p><canvas id="paper" width="1280" height="768">
+  To play this game, please use a browser that supports the Canvas element, and has Javascript enabled.<br/>
+  <img type="image/png" width=1280 height=700 src="/static/i/titlescreen-login.png"/>
+</canvas></p>
+<form id="dialog" style="display: none">
+  <fieldset><legend id="dialogTitle"></legend>
+    <textarea id="dialogText" readonly cols=60 rows=3></textarea><br/>
+    <div class="wideToolbar">
+      <input type="submit" id="dialogButton1" name="1" value=""/>
+      <input type="submit" id="dialogButton2" name="2" value=""/>
+      <input type="submit" id="dialogButton3" name="3" value=""/>
+      <input type="submit" id="dialogButton4" name="4" value=""/>
+    </div>
+  </fieldset>
+</form>
+{% endblock %}

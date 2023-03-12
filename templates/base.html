@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+            <title>{% block subtitle_head %}{% endblock %} - Maskies Ice Cream Parlor</title>
+            <meta name="description" content="{% block description_head %}{% endblock %}" />
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <link rel="stylesheet" media="all" href="/static/c/all.20210802t1450.css"/>
+        </head>
+    <body>
+        <div class="main">{% block ui %}{% endblock %}{% block content %}{% endblock %}</div>
+        <footer>
+            <hr/>
+            <p>&copy; 2019 - 2021, Treasure Trove Studio.</p>
+        </footer>
+        <script type="text/javascript" src="/static/j/paper.js"></script>
+        <noscript>To play this game, please enable javascript.</noscript>
+         <audio id="soundSprites" preload="auto" controls playsinline style="display:none">{% block soundSprites %}{% endblock %}</audio>
+        {% block extraJavascript %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'ui.snippet' %}
+{% block subtitle_head %}Entry{% endblock %}
+{% block description_head %}A horror adventure game in which you try not to die.{% endblock %}
+{% block soundSprites %}
+   <source src="/static/a/multiply.mid" type="audio/midi">
+   <source src="/static/a/multiply.ogg" type="audio/ogg">
+   <source src="/static/a/multiply.wav" type="audio/wav">
+   <source src="/static/a/multiply.mp3" type="audio/mp3">
+{% endblock %}
+{% block extraJavascript %}
+<script type="text/javascript" src="/static/j/titlescreen-login.js"></script>
+{% endblock %}

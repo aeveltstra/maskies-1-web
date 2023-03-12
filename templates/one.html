@@ -1,0 +1,12 @@
+{% extends 'ui.snippet' %}
+{% block subtitle_head %}Night 1{% endblock %}
+{% block description_head %}In which {{p}} observes how a security guard gets killed.{% endblock %}
+{% block soundSprites %}
+   <source src="/static/a/multiply.mid" type="audio/midi">
+   <source src="/static/a/multiply.ogg" type="audio/ogg">
+   <source src="/static/a/multiply.wav" type="audio/wav">
+   <source src="/static/a/multiply.mp3" type="audio/mp3">
+{% endblock %}
+{% block extraJavascript %}
+<script type="text/javascript" src="/static/j/one.js?uid={{p}}"></script>
+{% endblock %}
