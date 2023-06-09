@@ -5,10 +5,8 @@ name = "pypi"
 
 [packages]
 flask = "*"
-boto3 = "*"
 flask-httpauth = "*"
 pyopenssl = "*"
-bandit = "*"
 pytz = "*"
 babel = "*"
 
